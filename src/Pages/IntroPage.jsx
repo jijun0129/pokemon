@@ -1,13 +1,13 @@
-import styled from "@emotion/styled";
-import PokemonLogo from "../assets/pokemon-logo.png";
-import { useNavigate } from "react-router-dom";
+import styled from '@emotion/styled';
+import PokemonLogo from '../assets/pokemon-logo.png';
+import { useNavigate } from 'react-router-dom';
 // use -> hook의 종류 중 하나! 페이지 이동 훅
 // 다른 페이지로 이동시켜주는 역할
 
 const IntroPage = () => {
   const navigate = useNavigate();
   const ButtonClick = () => {
-    navigate("/Main"); // main 경로에 매핑된 컴포넌트 렌더링
+    navigate('/main'); // main 경로에 매핑된 컴포넌트 렌더링
   };
 
   return (
