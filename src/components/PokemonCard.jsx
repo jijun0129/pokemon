@@ -47,6 +47,7 @@ const PokemonCard = ({ pokemon, selectPokemon, setSelectPokemon, select }) => {
 export default PokemonCard;
 
 const CardDiv = styled.div`
+  width: 100%;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #dddddd;

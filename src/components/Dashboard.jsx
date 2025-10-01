@@ -30,9 +30,10 @@ const DashboardDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
   width: 100vw;
   max-width: 1200px;
+  min-height: 344.5px;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -48,14 +49,14 @@ const TitleH2 = styled.h2`
 const ContentDiv = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   justify-items: center;
-  gap: 10px;
+  gap: 20px;
 `;
 
 const Img = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   padding: 25px;
   border-radius: 10px;
   border: 2px dashed #d0d0d0;
