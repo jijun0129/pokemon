@@ -23,7 +23,7 @@ const PokemonList = ({ selectPokemon, setSelectPokemon }) => {
 export default PokemonList;
 
 const DashboardDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
   padding: 20px;
   background-color: #f8f8f8;

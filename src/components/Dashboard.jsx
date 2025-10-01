@@ -17,7 +17,9 @@ const Dashboard = ({ selectPokemon, setSelectPokemon }) => {
           />
         ))}
         {Array.from({ length: 6 - selectPokemon.length }).map((_, index) => (
-          <Img key={index} src={Pokeball} alt='Pokeball' />
+          <Box>
+            <Img key={index} src={Pokeball} alt='Pokeball' />
+          </Box>
         ))}
       </ContentDiv>
     </DashboardDiv>
@@ -31,9 +33,8 @@ const DashboardDiv = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
-  min-height: 344.5px;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -61,4 +62,8 @@ const Img = styled.img`
   border-radius: 10px;
   border: 2px dashed #d0d0d0;
   background-color: #ffffff;
+`;
+
+const Box = styled.div`
+  height: 225.5px;
 `;
