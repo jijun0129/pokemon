@@ -33,7 +33,15 @@ function App() {
             />
           }
         />
-        <Route path='/detail' element={<DetailPage />} />
+        <Route
+          path='/detail'
+          element={
+            <DetailPage
+              selectPokemon={selectPokemon}
+              setSelectPokemon={setSelectPokemon}
+            />
+          }
+        />
       </Routes>
     </>
   );

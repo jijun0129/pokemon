@@ -5,7 +5,7 @@ const PokemonCard = ({ pokemon, selectPokemon, setSelectPokemon, select }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate(`/pokemon-detail?id=${pokemon.id}`);
+    navigate(`/detail?id=${pokemon.id}`);
   };
 
   const handlePlusClick = (e, pokemon) => {
