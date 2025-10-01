@@ -2,7 +2,7 @@ import MOCK_DATA from '../data/mock';
 import { useLocation, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-const PokemonDetail = ({ selectPokemon, setSelectPokemon }) => {
+const DetailPage = ({ selectPokemon, setSelectPokemon }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -72,7 +72,7 @@ const PokemonDetail = ({ selectPokemon, setSelectPokemon }) => {
   );
 };
 
-export default PokemonDetail;
+export default DetailPage;
 
 const ContainerDiv = styled.div`
   height: 100%;
